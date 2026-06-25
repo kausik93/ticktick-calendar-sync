@@ -1,0 +1,31 @@
+# Secrets & local config
+.env
+.env.*
+!.env.example
+
+# Sync state (contains real task ids / content hashes — never commit)
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Backups / scratch
+*.bak
+*.bak-*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Tooling / OS
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.DS_Store
